@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras em HTML5</title>
+</head>
+<body>
+    <h1>Usando Links Externos.</h1>
+    <p>Usa-se a marcação &lt;a&gt; e no parâmetro <em>href</em> que aparece no código, coloca-se a url do site/página desejado.</p> 
+    <p>No caso de links externos, recomenda-se sempre usar os parâmetros <em>target="_blank"</em> e <em>rel="external"</em>, para o link abrir em uma nova aba.</p>
+    <p>Você pode acessar meu <a href="https://www.youtube.com/channel/UCC2kjruDLbdDYNfDsZebujw" target="_blank" rel="external">canal no Youtube</a></p>
+    <br>
+    <h1> Usando Links Internos</h1>
+    <p>Link interno faz relação com outra página que está dentro do mesmo servidor.</p>
+    <p>Esta é a primeira página do site. Para acessar a <a href="pag002.html" rel="next">segunda página.</a> </p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a>.</p>
+    <br>
+    <h1>Links para Download</h1>
+    <p>Dentro da marcação &lt;a&gt; no parâmetro <em>href</em> põe-se o arquivo a ser baixado, juntamente com o parâmetro <em>download="Nome do arquivo"</em> e o parâmetro <em>type</em></p>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="Ligações em toda parte.pdf" type="application/pdf">Livro em PDF.</a>- (O navegador está abrindo o arquivo em PDF.)</li>
+        <li><a href="livro/10 - Ligações em toda parte.rar"     download="Ligações em toda parte.rar" type="application/zip">Livro em RAR.</a></li>
+    </ul>
+    <p>Obs: segue o <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">link com a lista type</a> para cada tipo de arquivo.</p>
+
+</body>
+</html>

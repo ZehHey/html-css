@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+        }
+        h3:hover{
+            color: red;
+        }
+        h3::after{
+            content:' ✎';
+        }
+        #cx{
+            background-color: rgba(228, 211, 211, 0.062);
+            display: flex;
+            justify-content: center;
+        }
+        #simbol{
+            background-color: rgba(168, 104, 104, 0.322);
+            border: 1px solid black;
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: inherit;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <h1>Pseudo-Classes</h1>
+    <hr>
+    <p>As pseudo-classes estão relacionadas à configuração do estado de um determinado elemento, por exemplo, se esse elemento está ativo, se está marcado, etc. Elas são identificadas por "<b>:</b>".</p>
+    <p>No exemplo abaixo, os elementos foram envelopados dentro de uma &lt;div&gt; e foram configuradas pseudo-classes <i>"hover"</i> nos parâmetros &lt;h3&gt; para que as letras fiquem vermelhas e para que os parâgrafos sejam exibidos quando o ponteiro do mouse passa sobre elas.</p>
+    <code>
+        <pre>
+            &lt;style&gt;
+            div > p{
+                display: none;      >>> <i>esconder o parágrafo</i>
+            }
+            div:hover > p{
+                display: block;     >>> <i>mostrar o parágrafo</i>
+            }
+            h3:hover{
+                color: red;         >>> <I>deixar a letra vermelha</I>
+            }
+            &lt;/style&gt;
+        </pre>
+    </code>
+    <hr>
+    <h1>Pseudo-Elementos</h1>
+    <hr>
+    <p>Os pseudo-elementos agem no contéudo do elemento, e podem agir nas classes, ids, e elementos. São identificados por "<b>::</b>".</p>
+    <p>No exemplo abaixo foi adicionado o símbolo &#9998; após os títulos &lt;h3&gt;.</p>
+    <code>
+        <pre>
+            h3::after{
+                content:' ✎';
+            }
+        </pre>
+    </code>
+    <hr>
+    
+    <div id="cx">
+        <div id="simbol">
+            <h4><u>*Símbolos Usados</u></h4>
+            <ul>
+                <li><b>#</b> &nbsp;=&nbsp; <i>id</i></li>
+                <li><b>.</b> &ensp;=&nbsp; <i>class</i></li>
+                <li><b>:</b> &ensp;=&nbsp; <i>pseudo-class</i></li>
+                <li><b>::</b> &nbsp;=&nbsp; <i>pseudo-element</i></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <h1 id="principal">Exemplos</h1>
+    <h2 id="h2html">Criando um site com HTML e CSS</h2>
+    <div>
+        <h3 class="basico">HTML básico</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam dolore libero sequi. Nobis eos velit placeat officiis illum, reprehenderit quisquam officia saepe corrupti debitis at enim, nesciunt vero fugit tenetur?</p>
+    </div>
+    <div>
+        <h3 class="intermediario">HTML intermediário</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam dolore libero sequi. Nobis eos velit placeat officiis illum, reprehenderit quisquam officia saepe corrupti debitis at enim, nesciunt vero fugit tenetur?</p>
+    </div>
+    <div>
+        <h3 class="avancado">HTML avançado</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam dolore libero sequi. Nobis eos velit placeat officiis illum, reprehenderit quisquam officia saepe corrupti debitis at enim, nesciunt vero fugit tenetur?</p>
+    </div>
+    <br>
+    <a href="index.html">Página Inicial</a><br>
+</body>
+</html>

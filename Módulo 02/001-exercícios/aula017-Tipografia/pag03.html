@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia 03</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tamanho de fontes</h1>
+    <h3>* Medidas Absolutas:</h3>
+    <ul>
+        <li>cm - centímetro;</li>
+        <li>mm - milímetro;</li>
+        <li>in - polegada;</li>
+        <li>px - pixel;</li>
+        <li>pt - ponto;</li>
+        <li>pc - paica;</li>
+    </ul>
+    <p>Exitem alguns problemas com a utilização das medidas absolutas,por exemplo, cm, mm, in,e px podem variar sua apresentação dependendo da tela do dispositivo utilizado.Já pt e pc são medidas tipográficas do papel, não é recomendado na utilização em telas.</p>
+    <br>
+    <h3>* Medidas Relativas:</h3>
+    <ul>
+        <li>em - medida relativa ao tamanho atual da fonte, com base no "M" maiúsculo;</li>
+        <li>ex - medida relativa à altura x de uma fonte;</li>
+        <li>rem - como o 'em', mas relativa à <i>root</i>, a fonte configurada no <i>body</i> do código da página;</li>
+        <li>vw - medida relativa à largura do <i>viewport</i> (tamanho da tela);</li>
+        <li>vh - altura do viewport;</li>
+        <li>% - porcentagem;</li>
+    </ul>
+    <br>
+    <p>A recomendação é que se use <i>px</i> ou <i>em</i>.</p>
+    <p>O tamanho padrão da fonte em web,é de <i>16px</i>, geralmente equivalente a <i>1em</i>.</p>
+    <br>
+    <h3>Shorthand font</h3>
+    <p>Para definir estilo, peso, tamanho e familia de uma fonte, geralmete usaria esse código na <i>head</i> da página:
+    </p>
+    <pre>
+        <code>
+            &lt;style&gt;
+                h1{
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: bolder;
+                    font-size: 3em;
+                    font-style: italic;
+                }
+        </code>
+    </pre>
+    Mas é possível substituir essas quatro linhas de código por apenas uma, usando o que é chamado de <i>shorthand font</i>, mas para utilizar esse recurso, é preciso lembrar a ordem dos parâmetros que serão definidos:
+    <p style="text-align: center; font-size: 20px;"><i>- font-style -> font-weight -> font-size -> font-family</i></p>
+    <p>Ex:</p>
+    <pre>
+        <code>
+            h1{
+                font: italic bolder 3em 'Work Sans', sans-serif;
+            }
+        </code>
+    </pre>
+    <br>
+    <p><a href="index.html">Página inicial</a></p>
+    
+</body>
+</html>

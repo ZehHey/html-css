@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fontes Externas</h1>
+    <h3>usando o Goolge Fontes</h3>
+    <p><a href="https://fonts.google.com/" target="_blank" rel="external">Google Fonts</a></p>
+    <p>O próprio <i>Google Fonts</i> já nos fornece o código para incorporar a fonte desejada no código do site que está sendo criado, com o @import.</p>
+    <br>
+    <h3>Fontes externas baixadas</h3>
+    <p>No caso da necessidade de baixar um fonte, os arquivos <i>.ttf</i> e <i>.otf</i> são salvos no servidor da página. E então é criado em CSS o <i>@font-face</i>, que possibilitará o uso da fonte no código criado.</p>
+    <p>Ex:
+        <pre>
+            <code>
+                @font-face {
+                    font-family: 'StarJedi';    --> <i>nome dado à familia da fonte</i>
+                    src: url(fontes/Starjedi.ttf) format(truetype);
+                }
+            </code>
+        </pre>
+    </p>
+    <p>Tipos de format():</p>
+    <ul>
+        <li>opentype (opt);</li>
+        <li>truetype (ttp);</li>
+        <li>embedded-opentype;</li>
+        <li>truetype-aat (Apple Advanced Typography);</li>
+        <li>svg;</li>
+    </ul>
+    <br>
+    <h3>Capturando Fontes de um site</h3>
+    <p>Para isso pode-se usar a extensão <b><i>Fonts Ninja</i></b> no Chrome.
+    </p>
+    <br>
+    <h3>Detectando fontes dentro de imagens</h3>
+    <p>São três sites que oferecem um ferramenta para adetecção de fontes em imagens. Obs: <i>Não é 100% garantido que funcione em todos os casos</i>.</p>
+    <p>Os sites são:</p>
+    <ul>
+        <li><a href="https://www.whatfontis.com/" target="_blank" rel="external">What Font Is.</a></li>
+        <li><a href="https://www.fontsquirrel.com/" target="_blank" rel="external">Font Squirrel.</a></li>
+        <li><a href="https://www.myfonts.com/?gclid=CjwKCAjwt52mBhB5EiwA05YKo9t4O2tjvJ8txqZF_BbJH04yBQfBv0LMXproYopAbcdGAqmveiwxiBoCGdsQAvD_BwE" target="_blank" rel="external">My fonts.</a></li>
+    </ul>
+    <br>
+    <a href="index.html">Página Inicial</a>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+envelopar - ctrl+shift+p
+seleção multipla - alt+clic

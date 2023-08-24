@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Seletor personalizado</h1>
+    <hr>
+    <h4>Em que momento usar:</h4>
+    <p>Quando temos dois elemento iguais em um documento HTML, mas que precisam ter formatações diferentes.</p>
+    <h4>Como usar:</h4>
+    <p>Coloca-se o parâmetro <i>"id="</i> dentro do elemento desejado e dá-se um nome a esse elemento para diferenciá-lo dos demais. Ex:</p>
+    <p><code>
+        <pre>
+            &lt;h1 id="principal"&gt;Exemplos&lt;/h1&gt;
+            &lt;h2 id="h2html"&gt;Criando um site com HTML e CSS&lt;/h2&gt;
+            &lt;h2 id="h2css"&gt;Aprendendo CSS/&lt;h2&gt;
+        </pre>
+    </code></p>
+    <p>Então na página de configuração de estilo,configura-se esse elemento pelo nome associado a ele. Para identificá-lo usa-se "#".Ex:</p>
+    <code>
+        <pre>
+            #principal{
+                background-color: white;
+                color: rgb(6, 6, 119);
+                text-align: center;
+            }
+            #h2html{
+                background-color: rgb(48, 56, 95);
+                color: aliceblue;
+            }
+            
+            #h2css{
+                background-color: rgb(84, 31, 134);
+                color: rgb(209, 209, 216);
+            }
+        </pre>
+    </code>
+    <h4>Usando classes</h4>
+    <p>Quando se tem dois ou mais elementos que precisam ter a mesma formatação dentro do mesmo documento HTML, usa-se o parâmetro <i><span class="basico">class</span></i>, que também faz a configuração personalizada.</p>
+    <p>É recomendável que não se nomeie as classes pela sua forma (ex: verde), mas sim por sua função (ex: básico).</p>
+    <code>
+        <pre>
+            &lt;h3 class="basico">HTML básico&lt;/h3>
+            &lt;h3 class="basico">CSS básico&lt;/h3>
+        </pre>
+    </code>
+    <p>As classes não são identificadas com "#" nas folhas de estilo, e sim com um ".". </p>
+    <code>
+        <pre>   
+            .basico{
+                color: rgb(102, 102, 211);
+            }
+
+            .intermediario{
+                color: rgb(46, 46, 126);
+            }
+        </pre>
+    </code>
+    <p>É possível usar uma mesma classe no meio de um parágrafo também, basta envelopar o trecho com a tag &lt;span&gt; e usar o parâmetro <span class="basico">class</span>.</p>
+    <code>
+        <pre>
+            (...)trecho com a tag &lt;span&gt; e usar o parâmetro &lt;span 
+            class="basico"&gt;class&lt;/span&gt;
+        </pre>
+    </code>
+    Pode-se também usar mais de uma classe em um mesmo <span class="intermediario destaque">elemento</span>, além de um <i>id</i> e <i>class</i> observando sempre a hierarquia das configurações:
+    <code>
+        <pre>
+            (...)classe em um mesmo &lt;span 
+            class="intermediario destaque"&gt;elemento&lt;/span&gt;
+        </pre>
+    </code>
+
+    <hr>
+    <br>
+    <h1 id="principal">Exemplos</h1>
+    <h2 id="h2html">Criando um site com HTML e CSS</h2>
+    <h3 class="basico">HTML básico</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam dolore libero sequi. Nobis eos velit placeat officiis illum, reprehenderit quisquam officia saepe corrupti debitis at enim, nesciunt vero fugit tenetur?</p>
+    <h3 class="intermediario">HTML intermediário</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam dolore libero sequi. Nobis eos velit placeat officiis illum, reprehenderit quisquam officia saepe corrupti debitis at enim, nesciunt vero fugit tenetur?</p>
+    <h3 class="avancado">HTML avançado</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam dolore libero sequi. Nobis eos velit placeat officiis illum, reprehenderit quisquam officia saepe corrupti debitis at enim, nesciunt vero fugit tenetur?</p>
+    <h2 id="h2css">Aprendendo CSS</h2>
+    <h3 class="basico">CSS básico</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam dolore libero sequi. Nobis eos velit placeat officiis illum, reprehenderit quisquam officia saepe corrupti debitis at enim, nesciunt vero fugit tenetur?</p>
+    <h3 class="intermediario">CSS intermediário</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam dolore libero sequi. Nobis eos velit placeat officiis illum, reprehenderit quisquam officia saepe corrupti debitis at enim, nesciunt vero fugit tenetur?</p>
+    <h3 class="avancado">CSS avançado</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam dolore libero sequi. Nobis eos velit placeat officiis illum, reprehenderit quisquam officia saepe corrupti debitis at enim, nesciunt vero fugit tenetur?</p>
+    <br>
+    <a href="pag02.html">Pseudo-classes/elementos</a><br>
+</body>
+</html>

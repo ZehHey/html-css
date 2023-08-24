@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style> 
+        body {
+            background-image: linear-gradient(to top, rgb(68, 68, 105), rgb(117, 117, 196)10%, rgb(205, 205, 248)50%);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+    <p>Para colocar degradê na cor de fundo da página, dentro da área &lt;head&gt; coloca-se a tag &lt;style&gt; e então o parâmetro body{} e substitui o <i>background-color</i> por <i>background-image: linear-gradient</i>.</p>
+    <p>No gradiente linear se define posição e quantidade  de cores</p>
+    <pre>
+        <code>
+        &lt;style&gt;
+        *{ >> <i><u>configuração global</u></i>
+            
+        }
+        body {
+            background-image: linear-gradient(to top, white,blue);
+            background-attachment: fixed**
+        }
+        &lt;/style&gt;
+        </code>
+    </pre>
+    <p>As direções do gradiente são representadas por:</p>
+    <ul>
+        <li><b>to right - </b>para a direita</li>
+        <li><b>to left - </b> para a esquerda</li>
+        <li><b>to top - </b> para cima</li>
+        <li><b>to bottom - </b> para baixo</li>
+    </ul>
+    <p>Ou podem ser representadas por grau, por exemplo:</p>
+    <ul>
+        <li><b>90deg - </b> 90&#176;</li>
+        <li><b>-45deg - </b>45&#176; negativo</li>
+
+    </ul>
+    <p>É possível substituir o parâmetro <i>linear-gradient</i> por <i>radial-gradiente</i> com a direção definida como <i>circle</i>.</p>
+    <p>O parêmetro <i>background-attachment: fixed;</i> permita que o fundo fique fixo mesmo rolando a página.</p>
+    <br>
+    <p><a href="index.html" rel="pagina inicial">Página inicial.</a></p>
+</body>
+</html>

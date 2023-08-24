@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas, Audio e Vídeo</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Seu site deve se adaptar ao tamanho da tela em que o usuário está acessando. Usa-se a tag &lt;picture&gt; e dentro dessa tag coloca-se &lt;img:src&gt; acima disso são colocadas as opções de imagens com tamanhos diferentes com a tag&lt;source:media:type&gt;.</p>
+    <p>No parâmetro "media=" pode usar o tamanho minimo ou máximo, nesse exemplo foi usada o tamanho máximo com 50px a mais para não ter necessidade do navegador mostrar uma barrade rolagem lateral. E no parâmetro "srcset=" a imagem com outras dimensões.</p>
+    <p>Nesse exemplo foram criadas três imagens de tamanhos diferentes:</p>
+        <ul>
+            <li>Pequena - 300x300px - Para celulares''</li>
+            <li>Média - 700x700px - Para tablets</li>
+            <li>Grande - 1000x1000px - Para telas grandes</li>
+        </ul>
+    <p>Tente abrir esse site em dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="Imagem flexível">
+    </picture>
+    <br>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Usa-se a tag &lt;audio&gt; com os parâmetros <em>controls</em> e <em>autoplay</em></p>
+    <p>É recomendável ter o arquivo em <em>MP3, WAV</em> e <em>OGG</em>.</p>
+    <audio src="midia/wheat-in-the-wind-7159.mp3" controls autoplay></audio>
+    <p>Essa uma segunda forma, onde o navegador vai selecionar automáticamente o arquivo compatível, assim como em imagens.</p>
+    <p>Usa-se a tag &lt;audio&gt; com os parâmetros <em>preload</em>, <em>autoplay</em> e <em>controls</em>.</p>
+    <p>Dentro dessa tag usa-se o parâmetro <em>source:src</em>.</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/thunder-and-beginning-of-rainfall-6249.mp3" type="audio/mpeg">
+        <source src="midia/thunder-and-beginning-of-rainfall-6249.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio.</p>
+    </audio>
+</body>
+</html>

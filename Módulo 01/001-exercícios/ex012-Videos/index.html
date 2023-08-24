@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Videos em hospedagem própria.</h1>
+    <p>Os diferentes navegadores são compatíveis com determinados formatos, por isso o ideal é ter o mesmo vídeo em formatos diferentes.</p>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video controls width="560" poster="midia/wallhaven-1jpex1.jpg">
+        <source src="midia/Abstract - 17460.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com esse formato de vídeo.</p>
+
+    </video>
+    <p>Dentro da tag &lt;video controls&gt; coloca-se tantas tags &lt;source:src&gt; necessárias para a quantidade de formatos diferentes criados do mesmo vídeo</p>
+    <p>Após a tag <em>controls</em> foi definida também a tag <em>width</em> em 560px para reduzir o tamanho da tela do vídeo no site. </p>
+    <p>É possível também colocar uma imagem como capa do vídeo com a tag <em>poster</em> depois da tag <em>width</em>.</p>
+    <p>Essa forma de reprodução de vídeo com hospedagem própria, pode ser problemática dependendo do número de acessos no site, pois consomem muito tráfego de dados, oque pode acarretar no encarecimento do serviço de hospedagem contratado.</p>
+    <br>
+    <h1>Incorporação de vídeos externos</h1>
+    <h2>Vídeos do Youtube.</h2>
+    <p>Dentro da opção <em>Compartilhar</em> em algum vídeo do Youtube, exite a opção <em>Incorporar</em>, na qual copia-se o código gerado e cola dentro do código HTML do seu site.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hfHRGT3J6VU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>Essa é a forma de incorporação de vídeo mais indicada pois o tráfego de dados ficará por conta do site externo, nesse caso o Youtube.</p>
+    <br>
+    <p>Outra opção para incorporação de vídeos externos é o Vimeo.</p>
+    <br>
+</body>
+</html>

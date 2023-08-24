@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to top, rgb(193, 193, 255) 2%, rgb(223, 223, 250) 15%, rgb(238, 239, 248) 83%);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+a{
+    color: rgb(24, 9, 88);
+    text-decoration: none;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#principal{
+    background-color: white;
+    color: rgb(6, 6, 119);
+    text-align: center;
+}
+h2{
+    color: rgb(40, 40, 151);
+}
+
+#h2html{
+    background-color: rgb(48, 56, 95);
+    color: aliceblue;
+}
+
+#h2css{
+    background-color: rgb(84, 31, 134);
+    color: rgb(209, 209, 216);
+}
+h3{
+    color: rgb(45, 45, 85);
+}
+
+p{
+    text-indent: 30px;
+}
+
+.basico{
+    color: rgb(102, 102, 211);
+}
+
+.intermediario{
+    color: rgb(46, 46, 126);
+}
+
+.avancado{
+    color: rgb(13, 13, 51);
+}
+
+.destaque{
+    background-color: rgba(194, 96, 194, 0.596);
+}
+
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+a:active{
+    color: red;
+}
+
+hr{
+    border-color: rgba(107, 94, 228, 0.384);
+}
