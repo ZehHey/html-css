@@ -1,0 +1,16 @@
+nav{            
+    position: absolute;
+    display: inline-block;
+    left:   35%;
+    margin: auto;  
+}
+nav a{
+    border: 2px solid blanchedalmond;
+    font-size: smaller;
+    margin: 2px;
+    padding: 4px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(14, 14, 99);
+}
