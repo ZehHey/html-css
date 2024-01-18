@@ -1,8 +1,9 @@
 nav{            
-    position: fixed;
+    position: absolute;
     display: inline-block;
-    left:   35%;
-    margin: auto;  
+    left:   50%;
+    margin: auto;
+    transform: translate(-50%);
 }
 nav a{
     background-color: aliceblue;
