@@ -5,7 +5,8 @@ nav{
     margin: auto;  
 }
 nav a{
-    border: 2px solid blanchedalmond;
+    background-color: aliceblue;
+    border: 2px solid blue;
     font-size: smaller;
     margin: 2px;
     padding: 4px;
