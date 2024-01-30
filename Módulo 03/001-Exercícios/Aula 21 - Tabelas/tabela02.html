@@ -34,6 +34,10 @@
         .num{
             text-align: right;
         }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
         thead, tfoot{
             background-color: gray;
             color: white
@@ -45,9 +49,9 @@
     <table>
         <caption>População por Estado</caption>
         <thead>
-            <th style="width: 150px;">Estado</th>
-            <th style="width: 150px;">População</th>
-            <th style="width: 180px;">% da populaçao</th>
+            <th style="width: 150px;" scope="col">Estado</th>
+            <th style="width: 150px;" scope="col">População</th>
+            <th style="width: 180px;" scope="col">% da populaçao</th>
         </thead>
         <tbody>
             <tr>
@@ -83,7 +87,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>117 473 451</strong></td>
                 <td>57,86%</td>
             </tr>
