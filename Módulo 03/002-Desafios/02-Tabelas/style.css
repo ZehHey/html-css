@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+a{
+    text-decoration: none;
+    color: rgb(21, 85, 21);
+    border: 1px solid green;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+a:hover{
+    color: rgb(139, 192, 142);
+    color: rgb(255, 255, 255);
+    background-color: rgb(21, 85, 21);
+}
