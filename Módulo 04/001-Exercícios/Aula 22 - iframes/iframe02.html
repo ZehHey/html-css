@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        iframe{
+            width: 95vw;
+            height: 300px;
+            border: 2px solid black;
+        }
+        a.botao{
+            text-decoration: none;
+            background-color: rgb(209, 209, 179);
+            color: rgb(7, 0, 0);
+            padding: 5px;
+            display: inline-block;
+            margin: 2px;
+            border-radius: 5px;
+            font-weight: 700;
+            box-shadow: 1px 1px 3px rgb(75, 74, 74);
+        }
+        a.botao:hover, a.botao:active{
+            background-color: rgb(231, 231, 80);
+        }
+    </style>
+    <title>Iframe 02</title>
+</head>
+<body>
+    <h1>Escolha uma opção</h1>
+    <nav>
+        <a href="index.html">Iframe 01</a>
+        <a href="iframe03.html">Iframe 03</a>
+    </nav>
+    <ul>
+        <li><a class="botao" href="../../../Módulo 03/001-Exercícios/Aula 21 - Tabelas/index.html" target="frame">Opção 01</a></li>
+        <li><a class="botao" href="../../../Módulo 03/002-Desafios/02-Tabelas/desafio01.html" target="frame">Opção 02</a></li>
+    </ul>
+    <iframe name="frame" src="" frameborder="0"></iframe>
+</body>
+</html>
