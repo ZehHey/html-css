@@ -9,11 +9,13 @@ html, body{
     width: 100vw;
     background-color: black;
 }
-
-main{
-    position: relative;
+body{
     background: aquamarine url(imagens/fundo-madeira.jpg) center center no-repeat fixed;
     background-size: cover;
+}
+main{
+    position: relative;
+    
     height: 100vh;
     width: 100vw;
 }
@@ -34,6 +36,7 @@ main{
     position: absolute;
     left: 6.95%;
     top: 12.7%;
+    border-radius: 3px;
 }
 nav{
     background-color: rgba(255, 235, 205, 0.11);
