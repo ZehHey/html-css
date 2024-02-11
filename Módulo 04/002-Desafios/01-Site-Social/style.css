@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body{
+    height: 97vh;
+    background: rgb(100, 61, 35) url(imagens/fundo-madeira.jpg) center center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: inline-block;
+    margin-left: 85%;
+}
+.link{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px;
+}
+#home{
+    margin-bottom: 50px;
+}
+img.logo{
+    max-width: 50px;
+    max-height: 50px;
+    display: block;
+    border-radius: 50%;
+}
+#iphone{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 25%;
+    top: 5%;
+}
+#imgiphone{
+    max-width: 250px;
+}
+#tela{
+    position: absolute;
+    max-width: 216px;
+    height: 380px;
+    left: 59%;
+    top: 215%;
+}
+#imgtela{
+    
+    background: gray url(imagens/tela-home.jpg);
+}
