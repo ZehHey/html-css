@@ -37,6 +37,7 @@ main{
     left: 6.95%;
     top: 12.7%;
     border-radius: 3px;
+    scroll-behavior: auto;
 }
 nav{
     background-color: rgba(255, 235, 205, 0.11);
