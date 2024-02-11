@@ -1,15 +1,50 @@
 @charset "UTF-8";
 
-body{
-    height: 97vh;
-    background: rgb(100, 61, 35) url(imagens/fundo-madeira.jpg) center center no-repeat fixed;
-    background-size: cover;
-    position: relative;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
 }
 
+main{
+    position: relative;
+    background: aquamarine url(imagens/fundo-madeira.jpg) center center no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+#telefone{
+    background: rgba(128, 128, 128, 0) url(imagens/frame-iphone.png) left top no-repeat fixed;
+    background-size: cover;
+    position: absolute;
+    width: 250px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#frame{
+    background-color: blue;
+    width: 216px;
+    height: 381px;
+    position: absolute;
+    left: 6.95%;
+    top: 12.7%;
+}
 nav{
+    background-color: rgba(255, 235, 205, 0.11);
+    height: 500px;
     display: inline-block;
-    margin-left: 85%;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(0%, -50%);
+    border-radius: 15px;
+    
 }
 .link{
     width: 50px;
@@ -25,25 +60,4 @@ img.logo{
     max-height: 50px;
     display: block;
     border-radius: 50%;
-}
-#iphone{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 25%;
-    top: 5%;
-}
-#imgiphone{
-    max-width: 250px;
-}
-#tela{
-    position: absolute;
-    max-width: 216px;
-    height: 380px;
-    left: 59%;
-    top: 215%;
-}
-#imgtela{
-    
-    background: gray url(imagens/tela-home.jpg);
 }
