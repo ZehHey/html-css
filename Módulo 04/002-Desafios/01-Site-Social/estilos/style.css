@@ -10,7 +10,7 @@ html, body{
     background-color: black;
 }
 body{
-    background: aquamarine url(imagens/fundo-madeira.jpg) center center no-repeat fixed;
+    background: aquamarine url(../imagens/fundo-madeira.jpg) center center no-repeat fixed;
     background-size: cover;
 }
 main{
@@ -20,7 +20,7 @@ main{
     width: 100vw;
 }
 #telefone{
-    background: rgba(128, 128, 128, 0) url(imagens/frame-iphone.png) left top no-repeat fixed;
+    background: rgba(128, 128, 128, 0) url(../imagens/frame-iphone.png) left top no-repeat fixed;
     background-size: cover;
     position: absolute;
     width: 250px;
@@ -30,9 +30,8 @@ main{
     transform: translate(-50%, -50%);
 }
 #frame{
-    background-color: blue;
     width: 216px;
-    height: 381px;
+    height: 380px;
     position: absolute;
     left: 6.95%;
     top: 12.7%;
