@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            text-align: center;
+            width: 300px;
+        }
+    </Style>
+    <title>Formulário 03</title>
+</head>
+<body>
+    <h1>Formulário 03</h1>
+    <br>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Soma de dois números</legend>
+            <p>
+                <label for="in1">Número 1:</label>
+                <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="in2">Número 2:</label>
+                <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="isoma">Soma</label>
+                <output name="soma" id="isoma">0</output>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <br>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Ajustes</legend>
+            <p>
+                <label for="ivol">Volume: </label>
+                <input type="range" name="vol" id="ivol" min="0" max="50" oninput="voln.innerHTML = Number(ivol.value) * 2">
+                <output name="voln" id="voln">50</output>
+            </p>
+            <p>
+                <label for="iagu">Agudos: </label>
+                <input type="range" name="agu" id="iagu" min="0" max="50" oninput="agun.innerHTML = Number(iagu.value)* 2">
+                <output name="agun" id="agun">50</output>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Ajustar">
+            <input type="reset" value="Limpar" onclick="resetar()">
+        </p>
+    </form>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Cálculo de Idade</legend>
+            <p>
+                <label for="iano">Ano de nascimento: </label>
+                <input type="number" name="ano" id="iano" min="1900" max="2024" value="1995" oninput="calcIdade()">
+            </p>
+            <p style="text-align: left; margin-left: 20px;">
+                <label for="iidade">Esse ano você completa </label>
+                <output name="idade" id="iidade">0</output>
+            </p>
+        </fieldset>
+    </form>
+
+    <script>
+        
+        function resetar(){
+            document.getElementById('voln').innerHTML = '50'
+            document.getElementById('agun').innerHTML = '50'
+        }
+
+        function calcIdade(){
+            var vidade = document.getElementById('iidade')
+            var anoNas = Number(document.getElementById('iano').value)
+            var agora = new Date()
+            var anoAtual = agora.getFullYear()
+
+            document.getElementById('iano').setAttribute('max', anoAtual);
+
+            return vidade.innerHTML = Number(anoAtual - anoNas) + ' anos!'
+        }
+    </script>
+</body>
+</html>
