@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/*CONFIGURAÇÃO PARA IMPRESSÃO*/
+
+*{
+    width: 90vw;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+nav{
+    display: none;
+}
+fieldset{
+    border-width: 0px;
+}
+
+article::after{
+    font-size: 0.6em;
+    content: "Configurado para impressão por @zeh_hey";
+}
