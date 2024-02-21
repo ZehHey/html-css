@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
-    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
     <title>Media Queries 02</title>
+    <style>
+        /*CONFIGURAÇÕES GERAIS*/
+        @media all{
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body, html{
+            width: 100vw;
+            height: 100vh;
+            background-color: #233eff;
+        }
+        h1{
+            color: white;
+            text-shadow: 2px 2px 0px #1536a7;
+            padding: 10px;
+        }
+    }
+
+    /*CONFIGURAÇÕES MODO RETRATO*/
+    @media screen and (orientation:portrait) {
+        body{
+            background: url(../imagens/cev-portrait.jpg) center bottom no-repeat fixed;
+            background-size: contain;
+        }
+        }
+
+/*CONFIGURAÇÃO MODO PAISAGEM*/
+    @media screen and (orientation:landscape) {
+        body{
+            background: url(../imagens/cev-landscape.jpg) left bottom no-repeat fixed;
+            background-size: contain;
+        }
+        }
+    </style>
 </head>
 <body>
     <h1>Mude a orientação da tela</h1>
