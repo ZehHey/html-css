@@ -16,9 +16,11 @@ header{
     background-color: darkgray;
     text-align: center;
     padding: 10px;
+    border: 1px solid rgb(75, 74, 74);
 }
 header h1{
     margin-bottom: 10px;
+    
 }
 span#burguer{
     background-color: rgb(75, 74, 74);
@@ -59,7 +61,7 @@ main{
     border-radius: 5px;
     width: 85vw;
     margin: auto;
-    
+    border: 1px solid rgb(75, 74, 74);
     background-color: white;
     padding: 10px;
 }
