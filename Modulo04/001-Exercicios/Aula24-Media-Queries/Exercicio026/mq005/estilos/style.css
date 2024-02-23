@@ -6,31 +6,45 @@
     padding: 0;
 }
 body{
-    margin: auto;
-    width: 90vw;
     background-color: lightgrey;
 }
 header{
+    width: 85vw;
     border-radius: 5px;
-    margin-top: 5px;
+    margin: 5px auto 10px auto;
     background-color: darkgray;
     text-align: center;
-    contain: content;
-    padding-bottom: 5px;
+    padding: 10px;
 }
 header h1{
-    margin: 15px;
+    margin-bottom: 10px;
+}
+span#burguer{
+    background-color: rgb(75, 74, 74);
+    color: white;
+    border-radius: 5px;
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+}
+span#burguer:hover{
+    background-color: white;
+    color: black;
+}
+menu#itens{
+    display: none;
 }
 menu li{
-    display: inline;
+    display: block;
     list-style: none;
 }
 
 menu a{
+    display: block;
     border-radius: 5px;
     background-color: rgb(75, 74, 74);
     padding: 5px;
-    margin: 5px;
+    margin-top: 1px;
     text-decoration: none;
     color: white;
 }
@@ -42,11 +56,11 @@ menu a:hover{
 
 main{
     border-radius: 5px;
-    max-width: 600px;
+    width: 85vw;
     margin: auto;
-    margin-top: 10px;
+    
     background-color: white;
-    padding: 20px;
+    padding: 10px;
 }
 main h2{
     text-align: center;
