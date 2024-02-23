@@ -4,13 +4,20 @@
 
 @media screen and (min-width:600px){
     header{
-        width: 600px;
+        width: 90vw;
     }
     main{
-        width: 600px;
+        width: 90vw;
     }
-    #burguer{visibility: hidden;}
+    span#burguer{
+        display: none;
+    }
     menu#itens{
         display: block;
+    }
+    menu#itens li{
+        display: inline-block;
+        
+        
     }
 }
