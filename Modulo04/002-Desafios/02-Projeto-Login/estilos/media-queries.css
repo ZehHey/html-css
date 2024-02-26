@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width:600px){
+@media screen and (min-width:605px){ /*small tablets width 600px*/
     #login{
         width: 550px;
         height: 300px;
