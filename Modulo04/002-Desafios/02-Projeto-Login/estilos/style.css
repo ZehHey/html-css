@@ -77,7 +77,7 @@ main{
 #formulario a{
     margin: 5px;
     text-decoration: none;
-    color: #1db58fb9;
+    color: var(--cor3);
     display: block;
     
 }
@@ -86,6 +86,8 @@ main{
 }
 .campos{
     margin: 10px;
+}
+#entrar{padding: 2px;
 }
 
 

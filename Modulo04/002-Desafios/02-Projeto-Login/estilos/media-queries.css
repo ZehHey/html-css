@@ -1,14 +1,13 @@
 @charset "UTF-8";
 
-@media screen and (min-width:605px){ /*small tablets width 600px*/
+@media screen and (min-width:605px) and (max-width:1024px){ /*small tablets width 600px*/
     body{
         background-image: linear-gradient(-45deg, var(--cor5)10%, var(--cor4) 40%, var(--cor1));
         background-repeat: no-repeat;
     }
     #login{
         width: 550px;
-        height: 300px;
-        
+        height: 300px;        
     }
     div#imagem{
         display: inline-flex;
@@ -33,6 +32,68 @@
     #formulario form p{
         margin:5px;
         padding: 2px;
+        text-align: left;
+    }
+    #iemail, #isenha{width: 250px;}
+    #rodape{margin-top: 40px;}
+    #entrar{
+        display: inline-flex;
+        transform: translateY(15%);
+    }
+    #redsenha{
+        display: inline-flex;
+        transform: translate(-15%, -110%);
+    }
+}
+
+@media screen and (min-width:1025px){
+    body{
+        background-image: linear-gradient(-45deg, var(--cor5)10%,rgba(245, 149, 39, 0.603), var(--cor4) 40%, var(--cor1));
+        background-repeat: no-repeat;
+    }
+    #login{
+        width: 70vw;
+        height: 70vh;
+    }
+    #imagem{
+        display: inline-flex;
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+    #formulario{
+        float: left;
+        width: 50%;
+        height: 100%;
         text-align: center;
+    }
+    #formulario h1{
+        margin: 5px;
+        display: inline-flex;
+    }
+    #formulario #msg{
+        display: inline-flex;
+        text-align: center;
+        font-size: 0.9em;
+        padding: 0px 5px;
+        margin: 10px 2px 45px 2px ;
+    }
+    #formulario form p{
+        margin:5px;
+        padding: 2px;
+        text-align: left;
+    }
+    #iemail, #isenha{width: 250px;}
+    #rodape{
+        margin-top: 60px;
+        text-align: center;
+    }
+    #entrar{
+        display: inline-flex;
+        transform: translate(30px, 15%);
+    }
+    #redsenha{
+        display: inline-flex;
+        transform: translate(20%, -110%);
     }
 }
