@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 @media screen and (min-width:605px){ /*small tablets width 600px*/
+    body{
+        background-image: linear-gradient(-45deg, var(--cor5)10%, var(--cor4) 40%, var(--cor1));
+        background-repeat: no-repeat;
+    }
     #login{
         width: 550px;
         height: 300px;
