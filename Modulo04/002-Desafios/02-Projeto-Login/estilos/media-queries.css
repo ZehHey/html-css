@@ -1,2 +1,34 @@
 @charset "UTF-8";
 
+@media screen and (min-width:768px){
+    #login{
+        width: 550px;
+        height: 275px;
+        
+    }
+    div#imagem{
+        display: inline-flex;
+        width: 200px;
+        height: 100%;
+        background-color: red;
+    }
+    div#formulario{
+        height: 100%;
+        display: inline;
+        position: inherit;
+        text-align: center;
+    }
+    #formulario h1{
+        margin: 5px;
+        display: inline;
+    }
+    #formulario #msg{
+        text-align: center;
+        font-size: 0.8em;
+        padding: 0px 5px;
+    }
+    #formulario form{
+        
+        text-align: center;
+    }
+}
