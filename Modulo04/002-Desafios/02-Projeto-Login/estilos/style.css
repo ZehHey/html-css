@@ -68,6 +68,7 @@ main{
     color: var(--cor5);
     font-variation-settings: 
     'FILL' 1;
+    transform: translateY(25%);
 }
 #formulario a{
     margin: 5px;
