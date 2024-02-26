@@ -3,7 +3,7 @@
 @media screen and (min-width:600px){
     #login{
         width: 550px;
-        height: 275px;
+        height: 300px;
         
     }
     div#imagem{
@@ -26,8 +26,9 @@
         font-size: 0.8em;
         padding: 0px 5px;
     }
-    #formulario form{
-        
+    #formulario form p{
+        margin:5px;
+        padding: 2px;
         text-align: center;
     }
 }
