@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-@media screen and (min-width:605px) and (max-width:1024px){ /*small tablets width 600px*/
+@media screen and (min-width:605px) and (max-width:1000px){ /*small tablets width 600px*/
     body{
         background-image: linear-gradient(-45deg, var(--cor5)10%, var(--cor4) 40%, var(--cor1));
         background-repeat: no-repeat;
     }
     #login{
         width: 550px;
-        height: 300px;        
+        height: 310px;        
     }
     div#imagem{
         display: inline-flex;
@@ -26,27 +26,30 @@
     }
     #formulario #msg{
         text-align: center;
-        font-size: 0.8em;
+        font-size: 0.9em;
         padding: 0px 5px;
+        margin: 10px auto -10px auto;
     }
     #formulario form p{
         margin:5px;
         padding: 2px;
         text-align: left;
     }
-    #iemail, #isenha{width: 250px;}
-    #rodape{margin-top: 40px;}
-    #entrar{
-        display: inline-flex;
-        transform: translateY(15%);
+    #iemail, #isenha{width: 230px;}
+    #rodape{
+        display: inline-block;
+        width: 90%;
+        align-content: center;
+        padding: 0px;
+        margin: auto;
+        transform: translateY(-15%);  
     }
-    #redsenha{
-        display: inline-flex;
-        transform: translate(-15%, -110%);
+    #entrar, #redsenha{
+        width: 100%;
     }
 }
 
-@media screen and (min-width:1025px){
+@media screen and (min-width:1001px){
     body{
         background-image: linear-gradient(-45deg, var(--cor5)10%,rgba(245, 149, 39, 0.603), var(--cor4) 40%, var(--cor1));
         background-repeat: no-repeat;
@@ -72,9 +75,9 @@
         display: inline-flex;
     }
     #formulario #msg{
+        font-size: 1.1em;
         display: inline-flex;
         text-align: center;
-        font-size: 0.9em;
         padding: 0px 5px;
         margin: 10px 2px 45px 2px ;
     }
@@ -83,17 +86,12 @@
         padding: 2px;
         text-align: left;
     }
-    #iemail, #isenha{width: 250px;}
-    #rodape{
-        margin-top: 60px;
-        text-align: center;
+    #iemail, #isenha{width: 85%;}
+    #rodape{margin: 30px auto 5px auto;}
+    #formulario h1{
+        font-size: 2em;
+        margin: 5px;
     }
-    #entrar{
-        display: inline-flex;
-        transform: translate(30px, 15%);
-    }
-    #redsenha{
-        display: inline-flex;
-        transform: translate(20%, -110%);
-    }
+    #entrar{width: 98%;}
+    
 }

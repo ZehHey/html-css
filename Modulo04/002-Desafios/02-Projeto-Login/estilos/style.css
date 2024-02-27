@@ -68,26 +68,56 @@ main{
     padding: 0px 5px;
     margin: 0px 5px;
 }
+#isenha, #iemail{
+    padding: 2px;
+    margin: 5px;
+}
 .material-symbols-rounded{
     color: var(--cor5);
     font-variation-settings: 
     'FILL' 1;
     transform: translateY(25%);
 }
-#formulario a{
-    margin: 5px;
-    text-decoration: none;
-    color: var(--cor3);
+
+
+.campos{
+    text-align: center;
+    margin: 20px;
+}
+form{
+    margin-top: -20px;
+}
+#entrar{
+    font-size: 1em;
+    padding: 5px;
+    margin: 0px 5px;
+    background-color: var(--cor3);
     display: block;
-    
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+#entrar:hover{
+    background-color: var(--cor2);
+}
+
+#formulario a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border: 1px solid var(--cor3);
+    border-radius: 5px;
+    color: var(--cor2);
 }
 #formulario a:hover{
-    color: var(--cor5);
-}
-.campos{
-    margin: 10px;
-}
-#entrar{padding: 2px;
+    
+    background-color: var(--cor2);
+    color: white;
 }
 
 
