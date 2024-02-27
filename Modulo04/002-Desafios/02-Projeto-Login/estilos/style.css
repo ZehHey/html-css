@@ -69,6 +69,7 @@ main{
     margin: 0px 5px;
 }
 #isenha, #iemail{
+    width: 70%;
     padding: 2px;
     margin: 5px;
 }
