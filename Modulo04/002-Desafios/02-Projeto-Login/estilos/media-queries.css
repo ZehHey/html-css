@@ -7,7 +7,7 @@
     }
     #login{
         width: 550px;
-        height: 310px;        
+        height: 350px;        
     }
     div#imagem{
         display: inline-flex;
@@ -28,14 +28,17 @@
         text-align: center;
         font-size: 0.9em;
         padding: 0px 5px;
-        margin: 10px auto -10px auto;
+        margin: 10px auto 10px auto;
     }
     #formulario form p{
         margin:5px;
         padding: 2px;
         text-align: left;
     }
-    #iemail, #isenha{width: 230px;}
+    #iemail, #isenha{
+        width: 230px;
+        height: 1.9em;
+    }
     #rodape{
         display: inline-block;
         width: 90%;
@@ -86,7 +89,7 @@
         padding: 2px;
         text-align: left;
     }
-    #iemail, #isenha{width: 85%;}
+    #iemail, #isenha{width: 80%;}
     #rodape{margin: 30px auto 5px auto;}
     #formulario h1{
         font-size: 2em;
