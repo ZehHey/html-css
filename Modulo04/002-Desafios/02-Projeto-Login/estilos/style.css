@@ -40,11 +40,12 @@ main{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.459);
 
+    transform: translate(-50%, -50%);
     transition: width .4s, height .4s;
 }
 
